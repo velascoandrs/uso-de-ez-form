@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Material</h2>
+            <ez-form
+                    [formConfig]="miConfiguracion"
+                    [inputData]="usuario"
+                    (dataFromForm)="escucharFormulario($event)"
+                    [styleFramework]="'bootstrap'"
+                    [msgErrorAnimation]="'fadeInLeft'"
+                    [toasterConfig]="myToasterConfig"
+            >
+                <p>I'm making use of wikipedia api</p>
+                <button mat-raised-button color="primary" class="btn btn-block">Submit</button>
+            </ez-form>
+        </div>
+<!--        <div class="col-md-6">-->
+<!--            <h2>Bootstrap</h2>-->
+<!--            <ez-form-->
+<!--                    [styleFramework]="'bootstrap'"-->
+<!--                    [formConfig]="miConfiguracion"-->
+<!--                    [inputData]="usuario"-->
+<!--                    (dataFromForm)="escucharFormulario($event)"-->
+<!--                    [msgErrorAnimation]="'fadeInLeft'"-->
+<!--                    [toasterConfig]="myToasterConfig">-->
+<!--            <button class="btn btn-block btn-info">Submit</button>-->
+<!--            </ez-form>-->
+<!--        </div>-->
+    </div>
+</div>

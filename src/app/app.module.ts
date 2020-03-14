@@ -3,10 +3,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {EzFormModule} from '@gordon_freeman/ez-form';
-import {MatButtonModule, MatNativeDateModule} from '@angular/material';
 import {PlosService} from './plos.service';
-import {ToastModule} from 'primeng';
 import {HttpClientModule} from '@angular/common/http';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -16,14 +15,11 @@ import {HttpClientModule} from '@angular/common/http';
     BrowserModule,
     BrowserAnimationsModule,
     EzFormModule,
-    MatNativeDateModule,
     HttpClientModule,
     MatButtonModule,
   ],
   providers: [
-    MatNativeDateModule,
     PlosService,
-    ToastModule,
   ],
   bootstrap: [AppComponent]
 })

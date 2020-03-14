@@ -3,47 +3,33 @@
 1. [Descripcion](#descripcion)  
 2. [Requisitos](#requisitos)
 3. [Instalacion](#instalacion)  
-4. [Uso](#usage)
+4. [Uso](#uso)
 
      4.1  [Toaster](#toaster)  
      
      4.2  [Bootstrap](#bootstrap)
      
-     4.3  [Animationaciones](#animations)
-5. [Summary](#summary)     
+     4.3  [Animaciones](#animaciones)
   
 ## Descripcion
 `ez-form` es un componente para angular 2+ que permite crear formularios reactivos facilmente.
  
 ## Requisitos
+
 * Angular Material: [documentacion](https://material.angular.io/)
 ```text
     $ ng add @angular/material
 ```
-* Angular 2 Toaster: [documentacion](https://www.npmjs.com/package/angular2-toaster)
+  
+##  Instalacion   
 
-* PRIMENG:  [Documentation](https://www.primefaces.org/primeng/#/setup)
-* chart.j: Check [Documentation](https://www.npmjs.com/package/chart.js) 
-   ```shell script
-     $ npm i chart.js
-    ```
-* Quill: [Documentation](https://www.npmjs.com/package/quill)
-    ```shell script
-      $ npm i quill
-     ```
-* FullCalendar Core: [Documentacion](https://fullcalendar.io/docs/initialize-es6)
-    ```shell script
-      $ npm i @fullcalendar/core
-    ```    
-* Componentes ez-form: [Documentacion](https://www.npmjs.com/package/@gordon_freeman/ez-form)  
+* Componente ez-form: [Documentacion](https://www.npmjs.com/package/@gordon_freeman/ez-form)  
 ```shell script  
     $ npm i @gordon_freeman/ez-form  
 ```  
   
   
   
-
-
 ## Uso  
 
 Primero en importamos el modulo en modulo de angular en cual lo vayamos a usar, en este caso sera el `app.module.ts`
@@ -64,27 +50,6 @@ Primero en importamos el modulo en modulo de angular en cual lo vayamos a usar, 
       bootstrap: [AppComponent]  
     })  
 ```  
-
-Si quiere utilizar el `datepicker` de angular material hacemos lo siguiente en el `module.ts` 
-If you want use  `datepicker` from angular material:
-
-```typescript
-    @NgModule({
-      declarations: [
-        AppComponent
-      ],
-      imports: [
-        BrowserModule,
-        EzFormModule,
-        BrowserAnimationsModule,
-        MatNativeDateModule,
-      ],
-      providers: [
-        MatDatepickerModule,
-      ],
-      bootstrap: [AppComponent]
-    })
-```
 
 ## Objeto de configuracion
 
@@ -165,7 +130,7 @@ Nuestro formulario tendra los siguientes campos:
         hint: 'Ingrese un correo electronico'
       },
 ```
-* Civil State: `Select` input (Required)
+* Estado civil: `Select` input (Required)
 ```typescript
     {
         controlName: 'estadoCivil',
@@ -352,7 +317,7 @@ So we need to make use of the Output : `dataFromForm`"
     
 Resultados:   
   
-![formulario](https://github.com/velascoandrs/repo-de-imagenes/blob/master/version-en/formulario2.PNG?raw=true)  
+![formulario](https://github.com/velascoandrs/repo-de-imagenes/blob/master/material.png?raw=true)  
 
 
 ## Toaster
@@ -398,7 +363,7 @@ Usamos el Input : `styleFramework`"
 ```
 
 Resultados
-![resultadoBootstrap](https://github.com/velascoandrs/repo-de-imagenes/blob/master/version-en/formulario2bsPNG.PNG?raw=true)
+![resultadoBootstrap](https://github.com/velascoandrs/repo-de-imagenes/blob/master/bootstrap.png?raw=true)
 
 
 ### Animaciones
